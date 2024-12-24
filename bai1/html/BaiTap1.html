@@ -29,7 +29,200 @@
             text-align: center;
         }
         nav a:hover {
+            background-col<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
             background-color: #575757;
+        }
+        main {
+            padding: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Basic Webpage</h1>
+    </header>
+    <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>This is the first section of the webpage. It contains some introductory text.</p>
+            <button id="button1">Click Me</button>
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>This is the second section of the webpage. You can add more content here.</p>
+            <button id="button2">Click Me</button>
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>This is the third section of the webpage. Feel free to customize it further.</p>
+            <button id="button3">Click Me</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Basic Webpage</p>
+    </footer>
+    <script>
+        // Add event listeners to buttons
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert(`Button ${button.id} clicked!`);
+            });
+        });
+    </script>
+</body>
+</html>
+```          background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        main {
+            padding: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Basic Webpage</h1>
+    </header>
+    <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>This is the first section of the webpage. It contains some introductory text.</p>
+            <button onclick="alert('Button 1 clicked!')">Click Me</button>
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>This is the second section of the webpage. You can add more content here.</p>
+            <button onclick="alert('Button 2 clicked!')">Click Me</button>
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>This is the third section of the webpage. Feel free to customize it further.</p>
+            <button onclick="alert('Button 3 clicked!')">Click Me</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Basic Webpage</p>
+    </footer>
+    <script>
+        // Add event listeners to buttons
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert(`Button ${button.textContent} clicked!`);
+            });
+        });
+    </script>
+</body>
+</html>or: #575757;
         }
         main {
             padding: 1rem;
